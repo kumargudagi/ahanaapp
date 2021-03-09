@@ -1,0 +1,54 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <mat-expansion-panel>
+    <button mat-raised-button>Raised Button</button>
+    <mat-expansion-panel-header>
+
+      <mat-panel-title>
+        This is the expansion title
+      </mat-panel-title>
+      <mat-panel-description>
+        This is a summary of the content
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+  <mat-expansion-panel class="example-headers-align">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <mat-form-field [appearance]="&apos;fill&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Age" [required]="false">
+
+      </mat-form-field>
+      <mat-form-field [appearance]="&apos;fill&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="First name" [required]="false">
+
+      </mat-form-field><button mat-button (click)="nextStep()">Next</button>
+    </div>
+    <mat-expansion-panel-header>
+
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+      <mat-panel-description>
+        Type your name and age
+      </mat-panel-description>
+      <mat-icon style=" margin-right: 20px;">account_circle</mat-icon>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+  <mat-expansion-panel class="example-headers-align">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <mat-form-field [appearance]="&apos;fill&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="country" [required]="false">
+
+      </mat-form-field>
+    </div>
+    <mat-expansion-panel-header>
+
+      <mat-panel-title>
+        Destination
+      </mat-panel-title>
+      <mat-panel-description>
+        Type your name and age
+      </mat-panel-description>
+      <mat-icon style=" margin-right: 20px;">account_circle</mat-icon>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+</div>

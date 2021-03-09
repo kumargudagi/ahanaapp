@@ -13,12 +13,12 @@ import { HeroService } from '../../services/hero/hero.service';
 */
 
 @Component({
-    selector: 'bh-ahanapage',
-    templateUrl: './ahanapage.template.html'
+    selector: 'bh-expansion',
+    templateUrl: './expansion.template.html'
 })
 
-export class ahanapageComponent extends NBaseComponent implements OnInit {
-
+export class expansionComponent extends NBaseComponent implements OnInit {
+    step = 0;
     constructor() {
         super();
     }
@@ -27,7 +27,17 @@ export class ahanapageComponent extends NBaseComponent implements OnInit {
 
     }
 
-    first(){
-        console.log("first")
-    }
+    
+
+      setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
+  }
 }

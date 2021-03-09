@@ -1,0 +1,27 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <mat-horizontal-stepper [linear]="isLinear">
+    <mat-step label="Fill out your name" [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <mat-form-field [appearance]="&apos;fill&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput placeholder="Name" [required]="true" formControlName="firstCtrl">
+
+        </mat-form-field>
+        <div fxLayout="row wrap" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false"><button mat-raised-button matStepperNext>Next</button></div>
+      </form>
+    </mat-step>
+    <mat-step label="Fill out your Address" [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput placeholder="Address" [required]="true" formControlName="secondCtrl">
+
+        </mat-form-field>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button matStepperPrevious>Previous</button><button mat-raised-button matStepperNext>Next</button></div>
+      </form>
+    </mat-step>
+    <mat-step label="Done">
+      <div>
+        Your Done ....!!!!</div>
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button matStepperPrevious>Previous</button></div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>

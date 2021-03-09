@@ -15,6 +15,12 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-stepperComponent
+import { stepperComponent } from '../components/stepperComponent/stepper.component';
+//CORE_REFERENCE_IMPORT-expansion2Component
+import { expansion2Component } from '../components/expansion2Component/expansion2.component';
+//CORE_REFERENCE_IMPORT-expansionComponent
+import { expansionComponent } from '../components/expansionComponent/expansion.component';
 //CORE_REFERENCE_IMPORT-ahanapageComponent
 import { ahanapageComponent } from '../components/ahanapageComponent/ahanapage.component';
 
@@ -44,6 +50,12 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-stepperComponent
+stepperComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-expansion2Component
+expansion2Component,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-expansionComponent
+expansionComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-ahanapageComponent
 ahanapageComponent,
 
@@ -72,5 +84,5 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'ahanapage', component: ahanapageComponent},{path: '', redirectTo: 'ahanapage', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+export const appRoutes = [{path: 'ahanapage', component: ahanapageComponent},{path: 'expansion', component: expansion2Component},{path: 'stepper', component: stepperComponent},{path: '', redirectTo: 'ahanapage', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END
